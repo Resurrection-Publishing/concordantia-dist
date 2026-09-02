@@ -77,7 +77,9 @@ whole installation: Claude now carries the library.
    `concordantia-study-skill.zip` file you downloaded.
 4. In the Skills list, make sure **concordantia-study** is toggled **ON**.
 
-Now **start a new chat** — Claude picks up new skills in fresh chats.
+Now **start a new chat** — Claude picks up new skills in fresh chats. Invoke
+the study method by typing **`/concordantia-study`** followed by your
+question; that is the reliable way to begin.
 
 ---
 
@@ -150,9 +152,16 @@ machine.
 
 ## Try it: questions that show what this does
 
-Paste any of these into a fresh chat. Claude will study the library on its
-own — searching several angles, fetching the passages, verifying the quotes
-— and answer with (Author, Work, section) beside each claim.
+Start a fresh chat, type **`/concordantia-study`**, then your question —
+like this:
+
+> `/concordantia-study` How has the doctrine of the Trinity developed in church history?
+
+Claude will study the library on its own — searching several angles,
+fetching the passages, verifying the quotes — and answer with (Author,
+Work, section) beside each claim. (A plain question often works too, since
+the skill teaches Claude when to reach for the library — but the slash
+form makes it certain.)
 
 **How doctrines developed — the long story, from the sources**
 
@@ -255,7 +264,7 @@ for.
 | The Concordantia tools never appear | Quit Claude **fully** (Cmd+Q on Mac; right-click the tray icon → Quit on Windows) and reopen. Check Settings → Extensions shows Concordantia enabled. |
 | Mac blocked the install (see the security section above) | Run the one-line `xattr` command above, then restart Claude. |
 | Windows shows the blue "protected your PC" screen | **More info** → **Run anyway** — once per install. |
-| Answers have no Sources list | Start a **new chat**; confirm the *concordantia-study* skill is toggled ON in Settings → Skills. |
+| Answers have no Sources list | Start a **new chat** and invoke the skill explicitly: type `/concordantia-study` + your question. Also confirm the *concordantia-study* skill is toggled ON in Settings → Skills. |
 | A source link won't open | The passage reader lives inside the running app. It wakes with your next question — ask Claude anything, then click the link again. |
 | Very slow or fails mid-download | The first ~1 GB fetch needs a stable connection; try again on better Wi-Fi. It resumes from scratch, then never downloads again. |
 | Still stuck | Open an issue on this repository — describe your computer (Mac or Windows, roughly how old) and what you saw. |
