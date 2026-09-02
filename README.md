@@ -3,10 +3,10 @@
 Concordantia adds a 64-million-word library of classical Christian theology
 to [Claude Desktop](https://claude.ai/download) — the early church fathers,
 medieval teachers, the Reformers, and their heirs, 262 works in all — and
-then does something no search engine does: **it mechanically checks every
-quotation against the actual source text before the words reach you.** When
-Claude answers, each quote carries its author, work, and location, and ends
-with a Sources list whose links open the exact passage.
+**mechanically checks every quotation against the actual source text before
+the words reach you.** When Claude answers, each quote carries its author,
+work, and location, and every answer ends with a Sources list whose links
+open the exact passage.
 
 This guide assumes no technical background. If you can install an app, you
 can do this. Budget about 30 minutes the first time, most of it downloads.
@@ -43,8 +43,11 @@ library works only inside the desktop app.
 
 ## Step 2 — Download your two files
 
-Both files are on the **Releases** page of this repository — the latest
-release, under **Assets**. You will download:
+Both files are on this project's **Releases** page — most likely the page
+you just came from ([concordantia.net](https://concordantia.net) lands
+there). A release page has reading material at the top; **the downloadable
+files sit at the very bottom, under a heading called Assets.** Scroll down
+and download the two files that match your computer:
 
 | Your computer | The connector file | Size |
 |---|---|---|
@@ -103,8 +106,8 @@ delete it and download from here.)
 anyway**. You'll do this once per installation.
 
 **Mac:** installing the connector normally needs no extra step. If, after
-installing, the Concordantia tools never appear in Claude (this is
-Apple's "quarantine" flag blocking the hidden helper), do this one time:
+installing, the Concordantia tools never appear in Claude, the usual reason
+is Apple's security flag on the downloaded helper program. Do this one time:
 
 1. Open **Terminal**: press `Cmd + Space`, type `Terminal`, press Enter.
 2. Copy the line below, paste it into Terminal, press `Enter`:
@@ -266,7 +269,7 @@ for.
 | Windows shows the blue "protected your PC" screen | **More info** → **Run anyway** — once per install. |
 | Answers have no Sources list | Start a **new chat** and invoke the skill explicitly: type `/concordantia-study` + your question. Also confirm the *concordantia-study* skill is toggled ON in Settings → Skills. |
 | A source link won't open | The passage reader lives inside the running app. It wakes with your next question — ask Claude anything, then click the link again. |
-| Very slow or fails mid-download | The first ~1 GB fetch needs a stable connection; try again on better Wi-Fi. It resumes from scratch, then never downloads again. |
+| Very slow or fails mid-download | The first ~1 GB fetch needs a stable connection; try again on better Wi-Fi. It starts over, then never downloads again. |
 | Still stuck | Open an issue on this repository — describe your computer (Mac or Windows, roughly how old) and what you saw. |
 
 ---
