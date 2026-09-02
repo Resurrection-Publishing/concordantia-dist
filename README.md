@@ -67,8 +67,19 @@ Leave the files in your Downloads folder for the next step.
 ## Step 3 — Install the library (double-click)
 
 **Double-click the `.mcpb` file you downloaded.** Claude Desktop opens with
-a small window describing "Concordantia" — click **Install**. That's the
-whole installation: Claude now carries the library.
+a small window describing "Concordantia" — click **Install**.
+
+Then one more check that saves headaches later: open **Settings** (gear
+icon) → **Connectors** (called *Extensions* on some versions) →
+**Concordantia**, and make sure it is **enabled with all tools allowed**.
+Claude asks permission the first time it uses a tool; answering **Always
+allow** here is what makes the answer's source links appear every time.
+Anthropic's own walkthrough of connectors lives here:
+[Use connectors to extend Claude's capabilities](https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities);
+a friendly third-party step-by-step for installing an MCP server:
+[How to install an MCP server in Claude Desktop](https://calmara.app/blog/how-to-install-mcp-server-claude-desktop).
+
+That's the whole installation: Claude now carries the library.
 
 ## Step 4 — Teach Claude the study method (2 minutes)
 
@@ -83,6 +94,11 @@ whole installation: Claude now carries the library.
 Now **start a new chat** — Claude picks up new skills in fresh chats. Invoke
 the study method by typing **`/concordantia-study`** followed by your
 question; that is the reliable way to begin.
+
+Anthropic's walkthrough for skills — uploading, toggling, managing:
+[Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
+A third-party step-by-step with pictures:
+[How to Install Claude Skills](https://www.getclaudeskills.com/blog/how-to-install-claude-skills).
 
 ---
 
@@ -268,6 +284,7 @@ for.
 | Mac blocked the install (see the security section above) | Run the one-line `xattr` command above, then restart Claude. |
 | Windows shows the blue "protected your PC" screen | **More info** → **Run anyway** — once per install. |
 | Answers have no Sources list | Start a **new chat** and invoke the skill explicitly: type `/concordantia-study` + your question. Also confirm the *concordantia-study* skill is toggled ON in Settings → Skills. |
+| A Sources list appears but the links are missing | Claude needs standing permission for the connector's tools: Settings → Connectors → Concordantia → allow all tools (when Claude asks in chat, choose **Always allow**), then rerun your question. |
 | A source link won't open | The passage reader lives inside the running app. It wakes with your next question — ask Claude anything, then click the link again. |
 | Very slow or fails mid-download | The first ~1 GB fetch needs a stable connection; try again on better Wi-Fi. It starts over, then never downloads again. |
 | Still stuck | Open an issue on this repository — describe your computer (Mac or Windows, roughly how old) and what you saw. |
