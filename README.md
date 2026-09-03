@@ -102,6 +102,17 @@ A third-party step-by-step with pictures:
 
 ---
 
+## Not using Claude Desktop?
+
+The same library works with other MCP-capable AI agents. Download the
+`Concordantia-Setup-…zip` for your platform from the Releases page (arm64 =
+Apple-silicon Mac; x64 = Intel Mac or Windows), unzip, and run the
+`concordantia-setup` program inside — it fetches the library if needed and
+prints the exact configuration to paste into your agent. This path assumes
+some comfort with a terminal; everyone else should use the steps above.
+
+---
+
 ## A word about the security warning (please read once)
 
 Depending on your system, you may see a warning like *"…can't be opened
